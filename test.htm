@@ -4,7 +4,7 @@
 <body>
         test...
 <script src="./dist/barchart-ondemand-client-js.min.js"></script>
-
+<script>
 var onDemand = new OnDemandClient();
 
 onDemand.setAPIKey('d5ba85d06fd40afd6f1a62cfddba3278');
@@ -17,5 +17,6 @@ onDemand.getQuote({symbols: 'AAPL,GOOG'}, function (err, data) {
             console.log("getQuote: " + quotes[x].symbol + " [" + quotes[x].name + "] = " + JSON.stringify(quotes[x]));
         }
 });
+        </script>
         </body>
 </html>
